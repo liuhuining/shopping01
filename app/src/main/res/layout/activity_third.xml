@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ThirdActivity">
+    <ProgressBar
+        android:id="@+id/pb"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"/>
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pb"
+        android:layout_above="@+id/rl"></WebView>
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btn_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="加入收藏"/>
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="立即购买"
+            android:layout_alignParentRight="true"
+            />
+        <Button
+            android:id="@+id/btn_shop"
+            android:text="加入购物车"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/btn_buy" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

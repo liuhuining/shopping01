@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.qf.liuyong.shopping01.fragment.ContentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:listSelector="@drawable/lv_state"
+        ></ListView>
+    <GridView
+        android:id="@+id/gv"
+        android:layout_toRightOf="@+id/lv"
+        android:numColumns="3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></GridView>
+
+</RelativeLayout>
